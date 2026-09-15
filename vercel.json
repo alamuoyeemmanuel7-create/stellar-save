@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd apps/web && npm install && npm run build",
+  "outputDirectory": "apps/web/.next",
+  "env": {
+    "NEXT_PUBLIC_SOROBAN_RPC_URL": "@soroban_rpc_url",
+    "NEXT_PUBLIC_NETWORK_PASSPHRASE": "@network_passphrase",
+    "NEXT_PUBLIC_CONTRACT_ID": "@contract_id",
+    "NEXT_PUBLIC_SETTLEMENT_TOKEN": "@settlement_token"
+  },
+  "analytics": true
+}
