@@ -36,7 +36,7 @@ export function useGetGroup(groupId: number) {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [groupId]);
 
   return { group, loading, error, fetch };
 }
@@ -70,7 +70,7 @@ export function useHasContributed(groupId: number, member: string) {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [groupId, member]);
 
   return { hasContributed, loading, error, fetch };
 }
@@ -108,7 +108,7 @@ export function useContribute(groupId: number) {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [address, groupId, signTransaction]);
 
   return { contribute, loading, error, txHash };
 }
@@ -148,7 +148,7 @@ export function useTriggerPayout(groupId: number) {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [address, groupId, signTransaction]);
 
   return { triggerPayout, loading, error, txHash };
 }

@@ -69,7 +69,7 @@ export default function LandingPage() {
               margin: "0 auto 2rem",
             }}
           >
-            StellarSave digitizes Africa's $20B+ informal savings market. No middleman. No fees. Pure blockchain transparency.
+            StellarSave digitizes Africa&apos;s $20B+ informal savings market. No middleman. No fees. Pure blockchain transparency.
           </p>
 
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", marginBottom: "3rem" }}>
@@ -127,14 +127,14 @@ export default function LandingPage() {
             <div style={{ fontSize: "3rem", marginBottom: "1rem", color: "var(--accent)" }}>◆</div>
             <h3 style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>One Point of Failure</h3>
             <p style={{ color: "var(--muted)", lineHeight: "1.6" }}>
-              The collector holds all cash. Lost contributions, "misremembered" withdrawals, and absconded funds plague the system.
+              The collector holds all cash. Lost contributions, &quot;misremembered&quot; withdrawals, and absconded funds plague the system.
             </p>
           </div>
           <div style={{ background: "var(--surface)", padding: "2rem", borderRadius: "8px" }}>
             <div style={{ fontSize: "3rem", marginBottom: "1rem", color: "var(--accent)" }}>◉</div>
             <h3 style={{ fontSize: "1.25rem", marginBottom: "0.5rem" }}>No Custodian Trust</h3>
             <p style={{ color: "var(--muted)", lineHeight: "1.6" }}>
-              Existing digital apps still centralize custody in company servers. Users can't verify funds are safe.
+              Existing digital apps still centralize custody in company servers. Users can&apos;t verify funds are safe.
             </p>
           </div>
           <div style={{ background: "var(--surface)", padding: "2rem", borderRadius: "8px" }}>

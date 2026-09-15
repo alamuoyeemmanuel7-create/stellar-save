@@ -75,7 +75,7 @@ export default function GroupsPage() {
         </div>
       ) : (
         <div style={{ marginTop: "2rem", color: "var(--muted)" }}>
-          You're not a member of any groups yet.
+          You&apos;re not a member of any groups yet.
         </div>
       )}
 
