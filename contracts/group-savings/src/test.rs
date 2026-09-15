@@ -17,7 +17,14 @@ fn create_token_contract<'a>(
     )
 }
 
-fn setup_full_group(env: &Env) -> (u64, GroupSavingsClient<'static>, Vec<Address>, token::Client<'static>) {
+fn setup_full_group(
+    env: &Env,
+) -> (
+    u64,
+    GroupSavingsClient<'static>,
+    Vec<Address>,
+    token::Client<'static>,
+) {
     let admin = Address::generate(env);
     let (token_addr, token_admin, token_client) = create_token_contract(env, &admin);
 

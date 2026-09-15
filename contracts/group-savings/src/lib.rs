@@ -86,7 +86,9 @@ impl GroupSavings {
             is_open: true,
         };
 
-        env.storage().persistent().set(&DataKey::Group(group_id), &group);
+        env.storage()
+            .persistent()
+            .set(&DataKey::Group(group_id), &group);
         env.storage()
             .instance()
             .set(&DataKey::NextGroupId, &(group_id + 1));
@@ -115,7 +117,9 @@ impl GroupSavings {
             group.is_open = false;
         }
 
-        env.storage().persistent().set(&DataKey::Group(group_id), &group);
+        env.storage()
+            .persistent()
+            .set(&DataKey::Group(group_id), &group);
         Ok(())
     }
 
@@ -194,7 +198,9 @@ impl GroupSavings {
         token_client.transfer(&contract_address, &recipient, &pool_total);
 
         group.current_round += 1;
-        env.storage().persistent().set(&DataKey::Group(group_id), &group);
+        env.storage()
+            .persistent()
+            .set(&DataKey::Group(group_id), &group);
 
         Ok(())
     }
